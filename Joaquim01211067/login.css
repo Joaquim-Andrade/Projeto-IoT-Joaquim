@@ -2,6 +2,7 @@
     background-color: #ecf0f1;
     text-align: center;
     padding: 50px 0;
+    height: 450px;
 }
 .box-login{
     display: inline-block;
@@ -14,15 +15,19 @@
 
 .pag-login .input-padrao {
     width: 50%;
+    height: 25px;
     display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+
 }
 .btn-green{
     color: white;
     background-color: green;
-    margin: 20px 0 50px 0;
+    margin: 20px 50px 50px 50px;
     border: 0;
     padding: 10px 20px;
-
     border-radius: 5px;
     float: left;
     cursor: pointer;

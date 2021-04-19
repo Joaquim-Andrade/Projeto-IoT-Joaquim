@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.min.js"
+     integrity="sha512-RGbSeD/jDcZBWNsI1VCvdjcDULuSfWTtIva2ek5FtteXeSjLfXac4kqkDRHVGf1TwsXCAqPTF7/EYITD0/CTqw=="
+      crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 50%; height: 100px;">
+    <canvas id="chart" width="100px" height="100px"></canvas>
+    </div>
+</body>
+</html>
+<script>
+    var ctx = chart.getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['início','1ªPartida', '2ªPartida', '3ªPartida', '4ªPartida'],
+            datasets: [{
+                label: 'Pain Gaming',
+                data: [0, 0, 1, 2, 3],
+                backgroundColor: [
+                    'red',
+                ],
+                borderColor: [
+                    'red',
+                ],
+                borderWidth: 3
+
+                
+            },{
+                label: 'Vorax',
+                data: [0, 1, 1, 1, 1],
+                backgroundColor: [
+                    'purple',
+                ],
+                borderColor: [
+                    'purple',
+                ],
+                borderWidth: 3
+
+                
+            }]
+            
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+    </script>
